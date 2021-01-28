@@ -92,5 +92,4 @@ export default function Home() {
       <GitHubCorner projectUrl="https://github.com/omariosouto" />
     </QuizBackground>
   );
-
 }
