@@ -41,7 +41,7 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>The legend of zelda</h1>
+            <h1>O Guia do Mochileiro das Galaxias</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function (infosDoEvento) {
@@ -79,4 +79,5 @@ export default function Home() {
       <GitHubCorner projectUrl="https://github.com/omariosouto" />
     </QuizBackground>
   );
+
 }
