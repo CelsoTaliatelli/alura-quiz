@@ -30,9 +30,9 @@ export const QuizContainer = styled.div`
 
 export const Button = styled.button`
 /* Adapt the colors based on primary prop */
-background: ${({theme}) => theme.colors.primary};
+background: ${({ theme }) => theme.colors.primary};
 
-color: ${({theme}) => theme.colors.contrastText};
+color: ${({ theme }) => theme.colors.contrastText};
 
 font-size: 1em;
 margin: 1em;
@@ -58,15 +58,15 @@ export default function Home() {
             <h1>O Guia do Mochileiro das Galaxias</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function (infosDoEvento) {
+            <form onSubmit={(infosDoEvento) => {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-              console.log('Fazendo uma submissão por meio do react');
+              // console.log('Fazendo uma submissão por meio do react');
             }}
             >
               <input
-                onChange={function (infosDoEvento) {
-                  console.log(infosDoEvento.target.value);
+                onChange={(infosDoEvento) => {
+                  // console.log(infosDoEvento.target.value);
                   // State
                   // name = infosDoEvento.target.value;
                   setName(infosDoEvento.target.value);
