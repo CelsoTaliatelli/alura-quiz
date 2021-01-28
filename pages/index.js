@@ -28,6 +28,20 @@ export const QuizContainer = styled.div`
   }
 `;
 
+export const Button = styled.button`
+/* Adapt the colors based on primary prop */
+background: ${({theme}) => theme.colors.primary};
+
+color: ${({theme}) => theme.colors.contrastText};
+
+font-size: 1em;
+margin: 1em;
+padding: 0.25em 1em;
+border:none;
+border-radius: 3px;
+border-color:none
+`;
+
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
@@ -59,10 +73,9 @@ export default function Home() {
                 }}
                 placeholder="Diz ai seu nome"
               />
-              <button type="submit" disabled={name.length === 0}>
+              <Button primary type="submit" disabled={name.length === 0}>
                 Jogar
-                {name}
-              </button>
+              </Button>
             </form>
           </Widget.Content>
         </Widget>

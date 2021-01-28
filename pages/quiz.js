@@ -26,25 +26,9 @@ export const QuizContainer = styled.div`
   }
 `;
 
-export default function Quiz() {
+export default function QuizPage() {
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <Head>
-        <title>AluraQuiz - Modelo Base</title>
-      </Head>
-      <QuizContainer>
-        <QuizLogo />
-        <Widget>
-          <Widget.Header>
-            <h1>Bem-vido ao quiz Mochileiro das Galaxias</h1>
-          </Widget.Header>
-          <Widget.Content>
-            
-          </Widget.Content>
-        </Widget>
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
-    </QuizBackground>
+    <p>Pagina do Quiz</p>
   );
 }
