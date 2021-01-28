@@ -37,7 +37,7 @@ export default function Quiz() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>O Guia do Mochileiro das Galaxias ${Home.vsNome}</h1>
+            <h1>Bem-vido ao quiz Mochileiro das Galaxias</h1>
           </Widget.Header>
           <Widget.Content>
             
