@@ -9,6 +9,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -61,17 +62,10 @@ export default function Home() {
             <form onSubmit={(infosDoEvento) => {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-              // console.log('Fazendo uma submissão por meio do react');
             }}
             >
-              <input
-                onChange={(infosDoEvento) => {
-                  // console.log(infosDoEvento.target.value);
-                  // State
-                  // name = infosDoEvento.target.value;
-                  setName(infosDoEvento.target.value);
-                }}
-                placeholder="Diz ai seu nome"
+              <Input
+                onChange={(infosDoEvento) => { setName(infosDoEvento.target.value); }}
               />
               <Button primary type="submit" disabled={name.length === 0}>
                 Jogar
