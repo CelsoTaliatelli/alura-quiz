@@ -10,13 +10,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+import Button from '../src/components/Button';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -27,20 +21,6 @@ export const QuizContainer = styled.div`
     margin: auto;
     padding: 15px;
   }
-`;
-
-export const Button = styled.button`
-/* Adapt the colors based on primary prop */
-background: ${({ theme }) => theme.colors.primary};
-
-color: ${({ theme }) => theme.colors.contrastText};
-
-font-size: 1em;
-margin: 1em;
-padding: 0.25em 1em;
-border:none;
-border-radius: 3px;
-border-color:none
 `;
 
 export default function Home() {
@@ -68,7 +48,7 @@ export default function Home() {
                 onChange={(infosDoEvento) => { setName(infosDoEvento.target.value); }}
               />
               <Button primary type="submit" disabled={name.length === 0}>
-                Jogar
+                {`Jogar ${name}`}
               </Button>
             </form>
           </Widget.Content>
