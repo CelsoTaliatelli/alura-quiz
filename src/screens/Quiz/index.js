@@ -8,12 +8,11 @@ import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
-import loadingAnimation from './animations/loading.json';
-
 function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         Tela de Resultado:
       </Widget.Header>
 
@@ -58,11 +57,10 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
-        <Lottie
-          width="200px"
-          height="200px"
-          className="lottie-container basic"
-          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        <img
+          src="dp.gif"
+          alt="dont panic"
+          style={{ width: '100%', height: '180px' }}
         />
       </Widget.Content>
     </Widget>
@@ -149,9 +147,9 @@ function QuestionWidget({
           </pre> */}
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
+            {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
+            {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
@@ -173,7 +171,6 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   const bg = externalBg;
 
   function addResult(result) {
-    // results.push(result);
     setResults([
       ...results,
       result,
@@ -185,7 +182,6 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   // atualizado === willUpdate
   // morre === willUnmount
   React.useEffect(() => {
-    // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
     }, 1 * 2000);

@@ -52,6 +52,18 @@
         "Tudo aquilo que você acredita, torna-se realidade.",
         "42."
       ]
+    },
+    {
+      "image": "dp.gif",
+      "title": "Qual o nome do autor do livro O Guia do Mochileiro das Galáxias?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Douglas Adams.",
+        "Douglas Mathew.",
+        "Frank Miller.",
+        "Alan Moore"
+      ]
     }
   ],
   "external": [
