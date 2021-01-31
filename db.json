@@ -1,28 +1,56 @@
 {
   "bg": "background.jpg",
   "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "description": "Teste os seus conhecimentos sobre O Guia do Mochileiro das Galaxias",
   "questions": [
     {
-      "image": "marvin.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "A5bs.gif",
+      "title": "Qual o nome do Android da nave Coração de Ouro?",
+      "description": "",
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Marvin",
+        "Melvin",
+        "Paranoid",
+        "Malcon"
       ]
     },
     {
       "image": "42.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "title": "Segundo o livro, quais são os seres mais inteligentes do Planeta Terra?",
+      "description": "",
+      "answer": 3,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Os Homens",
+         "Os Ornitorrincos",
+         "Os Golfinhos",
+         "Os Ratos",
+         "Os Macacos"
+      ]
+    },
+    {
+      "image": "trillian.gif",
+      "title": "Antes de se encontrarem novamente, na Nave, Arthur Dent e Trillian já haviam se conhecido na Terra. Onde eles haviam se conhecido?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "No cinema",
+        "Em uma festa",
+        "No Correio",
+        "No Planeta dos Vogons",
+        "Na nave Coração de Ouro"
+      ]
+    },
+    {
+      "image": "marvin.gif",
+      "title": "Qual é a resposta para pergunta fundamental sobre a vida, o universo e tudo mais?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "a vida humana é um fragmento da realidade",
+        "Que a resposta está no campo das idéias de Platão.",
+        "Tudo aquilo que você acredita, torna-se realidade.",
+        "42."
       ]
     }
   ],
